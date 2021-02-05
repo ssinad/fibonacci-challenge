@@ -16,7 +16,7 @@ object FibonacciChallengeRDD {
   def main(args: Array[String]): Unit
   = {
     Logger.getLogger("org").setLevel(Level.ERROR)
-    val sc = new SparkContext("local[*]", appName = "FibonacciChallengeRDD")
+    val sc = new SparkContext(appName = "FibonacciChallengeRDD")
     val n = 20
 
     println(fibonacci(n, sc))
